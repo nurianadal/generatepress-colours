@@ -1,4 +1,12 @@
-_custom_color_palettes( $palettes ) {
+<?php 
+/**
+ * Change GeneratePress default color palettes.
+ *
+ * @param array $palettes GeneratePress array palettes, until 8 colors.
+ *
+ * @return array
+ */
+function cherry_custom_color_palettes( $palettes ) {
 	// Could be 8 colors.
 	$palettes = array(
 		'#A10524',
@@ -15,7 +23,7 @@ add_filter( 'generate_default_color_palettes', 'cherry_custom_color_palettes' );
 
 
 /**
- * Load Gutenberg and Theme defaults.
+ * Load Gutemberg and Theme defaults.
  *
  * @return void
  */
@@ -53,4 +61,3 @@ add_action(
 		);
 	}
 );
-
